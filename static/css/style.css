@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    padding: 1rem;
+}
+
+.sectionsTitle{
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.sectionsLane{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 225px;
+    overflow-x: scroll;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 200px;
+    flex-basis: 200px;
+    min-width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 10px;
+    background: linear-gradient( #eeeeee, #eeefff )
+}
+
+.card .cardArticle{
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.card a{
+    display: block;
+    padding: 10px;
+}
+
+.card .cardArticle *{
+    font-size: 1rem;
+    font-weight: normal;
+    color: #333;
+    text-decoration: none;
+}
+
+.card:nth-of-type(6n){
+    background: linear-gradient(  #eeefff, #eeeeee )
+}
+.card:nth-of-type(6n+1){
+    background: linear-gradient( #feeeeeff, #eeeeee )
+}
+.card:nth-of-type(6n+2){
+    background: linear-gradient( #ffeeff, #eeeeee )
+}
+.card:nth-of-type(6n+3){
+    background: linear-gradient(  #fffeee, #eeeeee)
+}
+.card:nth-of-type(6n+4){
+    background: linear-gradient( #efffee, #eeeeee )
+}
+.card:nth-of-type(6n+5){
+    background: linear-gradient(  #eefffe, #eeeeee)
+}
